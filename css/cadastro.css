@@ -1,0 +1,27 @@
+.first-container2 {
+    width: 100%;
+    height: 420px;
+    color: #ccc;
+    justify-content: center;
+    align-content: center;
+    background-image: url('../Img/vintage/banner_site.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    /* z-index: 1; */
+}
+
+.first-container2 .insideFirstContainer2>.image-logo {
+    margin-top: 5rem;
+}
+
+.ItemCadastro {
+    width: 100%;
+    height: 420px;
+    color: #ccc;
+    justify-content: center;
+    align-content: center;
+}

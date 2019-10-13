@@ -1,0 +1,111 @@
+    .first-container2 {
+        width: 100%;
+        height: 420px;
+        color: #ccc;
+        justify-content: center;
+        align-content: center;
+        background-image: url('../Img/vintage/banner_site.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -ms-align-items: center;
+        align-items: center;
+        text-align: center;
+        /* z-index: 1; */
+    }
+    
+    .first-container2 .insideFirstContainer2>.image-logo {
+        margin-top: 5rem;
+    }
+    
+    ?************** formulario de cadastro */ .form-item {
+        padding: 10px;
+    }
+    
+    .rotulo {
+        display: block;
+        width: 100%;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 100%;
+        border: 1px solid #5995DA;
+        padding: 3px;
+    }
+    
+    input[type="submit"] {
+        background-color: #5995DA;
+        color: white;
+        padding: 3px 20px;
+        border: none;
+    }
+    
+    input[type="submit"]:hover {
+        box-shadow: 2px 2px 2px #000;
+        cursor: pointer;
+    }
+    
+    .msg-erro {
+        padding-top: 5px;
+        color: red;
+        font-size: 0.8em;
+        font-style: italic;
+        display: none;
+    }
+    /****************** proximos show */
+    
+    aside {
+        background: rgb(200, 191, 231);
+        border-radius: 10px;
+    }
+    
+    aside .lista-produtos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+    
+    aside .produto {
+        transform: scale(0.7);
+        width: 150px;
+        height: 150px;
+    }
+    /**************************/
+    
+    .col-2,
+    .col-3 {
+        float: left;
+        /* para layout flexbox, retirar esta linha */
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+        width: 100%;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        /* para tablets: */
+        .col-2 {
+            width: 100%;
+        }
+        .col-3 {
+            width: 100%;
+        }
+        footer {
+            flex-direction: row;
+        }
+    }
+    
+    @media only screen and (min-width: 1000px) {
+        /* para desktop: */
+        .col-2 {
+            width: 80%;
+        }
+        .col-3 {
+            width: 20%;
+        }
+    }

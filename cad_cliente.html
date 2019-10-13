@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formu.css">
+    <title>Weekend Warriors</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <!-- NAVIGATION -->
+        <nav class="front-nav">
+            <ul class="nav-ul">
+                <div class="right-element">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">foundation</a></li>
+                    <li><a href="#">store</a></li>
+                </div>
+                <div class="left-element">
+                    <li><a id="login">Login  <a href="#"><span id="ItensMusic"><img  src="Img/pessoa-sexo.png" width="32" alt="pessoa-sexo"></a></a>
+                    </li>
+                    <li><a id="musicaTOCA"><a href="#">Music <span id="ItensMusic"><img src="Img/play-button.png" width="32" alt="music"></a></li>
+
+                </div>
+            </ul>
+        </nav>
+
+        <!-- FIRST CONTAINER -->
+        <div class="first-container2">
+            <div class="insideFirstContainer2">
+                <!-- esta incluido a imagem no css -->
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section class="col-2">
+            <h2>Cadastre-se</h2>
+            <div class="ItemCadastro">
+                <form action="" method="post" id="form-cadastro">
+                    <div class="form-item">
+                        <label for="nome" class="rotulo">Nome:</label>
+                        <input type="text" id="nome" name="nome" size="50" placeholder="Nome completo">
+                        <span class="msg-erro" id="msg-nome"></span>
+                    </div>
+                    <div class="form-item">
+                        <label for="email" class="rotulo">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="fulano@dominio" size="50">
+                        <span class="msg-erro" id="msg-email"></span>
+                    </div>
+                    <div class="form-item">
+                        <label class="rotulo">Perfil:</label>
+                        <label><input type="radio" name="perfil" value="c" id="perfilC">Consumidor final</label>
+                        <label><input type="radio" name="perfil" value="p" id="perfilP">Prestador de serviço</label>
+                        <span class="msg-erro" id="msg-perfil"></span>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="login2" class="rotulo">Login:</label>
+                        <input type="text" id="login2" name="login" placeholder="Mínimo 6 caracteres">
+                        <span class="msg-erro" id="msg-login"></span>
+                    </div>
+                    <div class="form-item">
+                        <label for="senha" class="rotulo">Senha:</label>
+                        <input type="password" id="senha" name="senha" placeholder="Mínimo 6 caracteres">
+                        <span class="msg-erro" id="msg-senha"></span>
+                    </div>
+                    <div class="form-item">
+                        <label for="senha2" class="rotulo">Repita a Senha:</label>
+                        <input type="password" id="senha2" name="senha2" placeholder="Mínimo 6 caracteres">
+                        <span class="msg-erro" id="msg-senha2"></span>
+                    </div>
+                    <div class="form-item">
+                        <label class="rotulo"></label>
+                        <label><input type="checkbox" id="concordo" name="concordo"> Li e estou de acordo com os termos de uso do site</label>
+                        <span class="msg-erro" id="msg-concordo"></span>
+                    </div>
+                    <div class="form-item">
+                        <label class="rotulo"></label>
+                        <input type="submit" id="botao" value="Confirmar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <aside class="col-3">
+            <h2>Festival proximos</h2>
+            <!-- container de mais pedidos -->
+            <div class="lista-produtos">
+                <!-- um produto -->
+                <div class="produto">
+                    <a href="produto.html">
+                        <figure>
+                            <img src="img/produtos/lavadora.jpg" alt="miniatura1">
+                            <figcaption>Lavadora de alta pressão<span class="preco">R$ 20,00</span></figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+            </div>
+        </aside>
+    </div>
+    <!-- fim area central -->
+
+    <!-- rodape -->
+    <footer>
+        <p>Weekend Warriors- Nova Mutum/MT<br> localizacao: Central Park<br> telefone: 1234-56789</p>
+        <ul class="social">
+            <a href="http://twitter.com/mazarafa7" target="_blank" rel="noreferrer"><img src="Img/twitter.png" title="Twitter"></a>
+            <a href="http://instagram.com/mazarafa7" target="_blank" rel="noreferrer"><img src="Img/instagram.png" title="Instagram"></a>
+            <a href="http://twitter.com/mazarafa7" target="_blank" rel="noreferrer"><img src="Img/spotify.png" title="Spotify"></a>
+        </ul>
+
+    </footer>
+    <!-- fim rodape -->
+
+</body>
+
+</html>
