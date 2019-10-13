@@ -251,11 +251,27 @@ footer {
     position: relative;
 }
 
+.buscando {
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 15px;
+    width: 80%;
+}
+
+.busca input[type=search] {
+    width: 80%;
+}
+
 footer {
+    padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    background: black;
+}
+
+footer p {
+    color: white;
+    float: left;
 }
 
 .social {
