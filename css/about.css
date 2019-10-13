@@ -1,10 +1,10 @@
-.first-container2 {
+.first-container3 {
     width: 100%;
     height: 420px;
     color: #ccc;
     justify-content: center;
     align-content: center;
-    background-image: url('../Img/vintage/banner_site.jpeg');
+    background-image: url('../Img/vintage/banner_vintage3.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,14 +14,6 @@
     /* z-index: 1; */
 }
 
-.first-container2 .insideFirstContainer2>.image-logo {
+.first-container3 .insideFirstContainer3>.image-logo {
     margin-top: 5rem;
-}
-
-.ItemCadastro {
-    width: 100%;
-    height: 420px;
-    color: #ccc;
-    justify-content: center;
-    align-content: center;
 }
