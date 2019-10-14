@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <script src="js/jquery.js"></script>
-    <link rel="stylesheet" href="css/formu.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loga.css">
 
     <title>Weekend Warriors</title>
 </head>
@@ -22,55 +24,57 @@
                     <li><a href="#">Store</a></li>
                 </div>
                 <div class="left-element">
-                    <li><a id="login">Login  <a href="login.html"><span id="ItensMusic"><img  src="Img/pessoa-sexo.png" width="32" alt="pessoa-sexo"></a></a>
+                    <li><a id="login">Login <a href="login.html"><span id="ItensMusic"><img src="Img/pessoa-sexo.png"
+                                        width="32" alt="pessoa-sexo"></a></a>
                     </li>
-                    <li><a id="musicaTOCA"><a href="#">Music <span id="ItensMusic"><img src="Img/play-button.png" width="32" alt="music"></a></li>
+                    <li><a id="musicaTOCA"><a href="#">Music <span id="ItensMusic"><img src="Img/play-button.png"
+                                        width="32" alt="music"></a></li>
 
                 </div>
             </ul>
         </nav>
-        <div class="first-container2">
-            <div class="insideFirstContainer2">
-                <!-- esta incluido a imagem no css -->
-            </div>
-        </div>
+
     </header>
     <div class="container">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            
 
-        <section id="logUser">
-            <br>
-            <br>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
 
-            <h2>Login</h2>
-            <br>
-            <p>Usuário</p>
-            <br>
-            <input class="user" type="text">
-            <br>
-            <br>
-            <p>Senha</p>
-            <br>
-            <input class="pass" type="password">
-            <br>
-            <br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <button class="iniciar">iniciar sesion</button>
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
 
-        </section>
-
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <span class="psw">Esqueceu a  <a href="#">senha</a></span>
+            </div>
+        </form>
+    </div>
 
 
     </div>
-    <br>
+
     <!-- fim area central -->
 
     <!-- rodape -->
     <footer>
         <p>Weekend Warriors- Nova Mutum/MT<br> localizacao: Central Park<br> telefone: 1234-56789</p>
         <ul class="social">
-            <a href="http://twitter.com/mazarafa7" target="_blank" rel="noreferrer"><img src="Img/twitter.png" title="Twitter"></a>
-            <a href="http://instagram.com/mazarafa7" target="_blank" rel="noreferrer"><img src="Img/instagram.png" title="Instagram"></a>
-            <a href="http://twitter.com/mazarafa7" target="_blank" rel="noreferrer"><img src="Img/spotify.png" title="Spotify"></a>
+            <a href="http://twitter.com/mazarafa7" target="_blank" rel="noreferrer"><img src="Img/twitter.png"
+                    title="Twitter"></a>
+            <a href="http://instagram.com/mazarafa7" target="_blank" rel="noreferrer"><img src="Img/instagram.png"
+                    title="Instagram"></a>
+            <a href="http://twitter.com/mazarafa7" target="_blank" rel="noreferrer"><img src="Img/spotify.png"
+                    title="Spotify"></a>
         </ul>
 
     </footer>
