@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-
+    <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="css/formu.css">
 
     <title>Weekend Warriors</title>
@@ -43,25 +43,19 @@
 
             <h2>Login</h2>
             <br>
-            <div class="ItemContato">
-                <form action="" method="post" id="form-contato">
-                    <div class="form-item">
-                        <label for="usuario" class="rotulo">Login ou e-mail:</label>
-                        <input type="text" id="usuario" name="usuario" size="50">
-                    </div>
-                    <div class="form-item">
-                        <label for="senha" class="rotulo">Senha:</label>
-                        <input type="password" id="senha" name="senha" size="50">
-                    </div>
-                    <div class="form-item">
-                        <input type="submit" id="botao" value="Entrar">
-                    </div>
-                    <br>
-                    <p>Se você não possui uma conta, pode criar uma agora em <a href="cad_cliente.html">
-                            Cadastre-se</a>.</p>
-                    <br><br>
-                </form>
-            </div>
+            <p>Usuário</p>
+            <br>
+            <input class="user" type="text">
+            <br>
+            <br>
+            <p>Senha</p>
+            <br>
+            <input class="pass" type="password">
+            <br>
+            <br>
+
+            <button class="iniciar">iniciar sesion</button>
+
         </section>
 
 
@@ -81,6 +75,7 @@
 
     </footer>
     <!-- fim rodape -->
+    <script src="js/entra.js"></script>
 
 </body>
 
