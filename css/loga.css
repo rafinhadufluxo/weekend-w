@@ -1,6 +1,5 @@
-body {font-family: Arial, Helvetica, sans-serif;}
 
-/* Full-width input fields */
+/********** ESSA PARTE É DE LOGIN DO USUARIO */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -39,10 +38,6 @@ button:hover {
   position: relative;
 }
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
 
 .container {
   padding: 16px;
@@ -76,21 +71,6 @@ span.psw {
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
 
 /* Add Zoom Animation */
 .animate {
