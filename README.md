@@ -1,6 +1,5 @@
 # weekend-w
 
-# PROJETO weekend-w
 
 WebSite de venda de ingressos para festas.
 
