@@ -29,7 +29,7 @@
                         <br>
                         <p>A história continua no house trak em Nova Mutum - MT .Os pré-registros já estão abertos.</p>
                         <br><br>
-                        <p>Use sua conta House trak para se registrar na venda de ingressos de Reveillon. Se você não possui uma conta, pode criar uma agora em <a href="cad_cliente.html">
+                        <p>Use sua conta House trak para se registrar na venda de ingressos de Reveillon. Se você não possui uma conta, pode criar uma agora em <a href="cad_cliente.php">
                                 Cadastre-se</a>.</p>
                         <br><br>
                         <p>1º Lote: R$ 100,00</p>

@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    /* todos os links sem sublinhado */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -110,16 +115,15 @@ nav ul.nav-ul {
 
 
 /* for moving all the objects in center */
-.form-item{
-    padding: 10px;
 
+.form-item {
+    padding: 10px;
 }
-.col-2{
+
+.col-2 {
     color: black;
     padding: 100px;
-    
     text-align: center;
-    
 }
 
 .container {
@@ -224,8 +228,6 @@ a.tomorrowland-alfter:hover {
     color: #fff;
     border-color: #fff;
 }
-
-
 
 .content2 .text2020 .buttonCancela {
     text-decoration: none;
