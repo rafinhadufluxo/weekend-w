@@ -1,4 +1,4 @@
-<?php include "cabecalho.php"; ?>
+<?php include "cabecalhoAdm.php"; ?>
 
 
 
@@ -73,4 +73,5 @@
     </main>
     <br><br><br><br>
 </div>
-<?php include "rodape.php"; ?>
+
+<?php include "rodapeAdm.php"; ?>
