@@ -13,24 +13,13 @@
             <ul class="nav-ul">
                 <div class="right-element">
 
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
+                    <li><a href="produtoController.php">Produtos</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Sair</a></li>
                     
-                    
-                </div>
-                <div class="left-element">
-                    <li><a id="login">Login  <a href="login.php"><span id="ItensMusic"><img  src="Img/pessoa-sexo.png" width="32" alt="pessoa-sexo"></a></a>
-                    </li>
-                    <li><a id="musicaTOCA"><a href="#">Music <span id="ItensMusic"><img src="Img/play-button.png" width="32" alt="music"></a></li>
-
                 </div>
             </ul>
         </nav>
 
-        <!-- FIRST CONTAINER -->
-        <div class="first-container">
-            <div class="insideFirstContainer">
-                <!-- esta incluido a imagem no css -->
-            </div>
-        </div>
     </header>
