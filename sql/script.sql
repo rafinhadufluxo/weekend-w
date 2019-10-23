@@ -7,7 +7,7 @@ USE weekend;
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cliente`
+-- Estrutura da tabela `usuario`
 --
 
 DROP TABLE IF EXISTS `usuario`;
