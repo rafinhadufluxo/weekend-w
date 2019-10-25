@@ -28,11 +28,12 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 DROP TABLE IF EXISTS `eventos`;
 CREATE TABLE IF NOT EXISTS `eventos` (
   `id_evento` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(255) DEFAULT NULL,
+  `nome` varchar(100) DEFAULT NULL,
   `data` date DEFAULT NULL,
-  `local` varchar(255) DEFAULT NULL,
+  `local` varchar(100) DEFAULT NULL,
   `valor` int(45) DEFAULT NULL,
-  `quantidade` int(40) DEFAULT NULL,
+  `quantidade` int(50) DEFAULT NULL,
+  `descricao` text DEFAULT NULL,
   
   PRIMARY KEY (`id_evento`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
@@ -61,11 +62,10 @@ DROP TABLE IF EXISTS `user_admin`;
 CREATE TABLE IF NOT EXISTS `user_admin` (
   `id_user_admin` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) DEFAULT NULL,
-
   `email` varchar(255) DEFAULT NULL,
   `senha` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id_user_admin`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1; 
 
 INSERT INTO `user_admin` (`id_user_admin`, `nome`, `email`, `senha`) VALUES
 (1, 'admin', 'admin', 'admin@admin', 'rafinha');
