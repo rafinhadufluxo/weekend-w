@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `id_cliente` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `senha` varchar(255) DEFAULT NULL,
+  `senha` int(255) DEFAULT NULL,
   PRIMARY KEY (`id_cliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
@@ -31,7 +31,8 @@ CREATE TABLE IF NOT EXISTS `eventos` (
   `nome` varchar(255) DEFAULT NULL,
   `data` date DEFAULT NULL,
   `local` varchar(255) DEFAULT NULL,
-  `valor` varchar(45) DEFAULT NULL,
+  `valor` int(45) DEFAULT NULL,
+  `quantidade` int(40) DEFAULT NULL,
   
   PRIMARY KEY (`id_evento`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
