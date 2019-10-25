@@ -7,7 +7,7 @@
 
 # Modelo Conceitual
 
-![alt text](https://github.com/mazarafa/weekend-w/blob/master/project%20BD/aprintBR.jpeg)
+![alt text](https://github.com/mazarafa/weekend-w/blob/master/project%20BD/modelo-conceitual.jpeg)
 
 
 
