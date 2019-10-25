@@ -12,6 +12,6 @@ aonde o mesmo pode criar, editar, remover festas em seu sistema. Contendo um ban
 que compraram o ingressos, e contendo, informações de seus usuarios.
 
 
-![alt text](https://github.com/mazarafa/weekend-w/blob/master/Img/vintage/banner_site.jpeg)
+![alt text](https://github.com/mazarafa/weekend-w/blob/master/Img/vintage/banner_vintage.jpeg)
 
 
