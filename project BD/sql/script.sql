@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `user_admin` (
   `id_user_admin` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `senha` varchar(255) DEFAULT NULL,
+  `senha` int(255) DEFAULT NULL,
   PRIMARY KEY (`id_user_admin`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1; 
 
