@@ -17,7 +17,7 @@ class BD {
 	}
 
 	function query($sql){
-		return mysqli_query($this->conexao, $sql);
+		return $this->conexao->query($sql);
 	}
 
 	function erro(){

@@ -30,8 +30,8 @@ class Evento{
 			{$dados['idFabricante']},
 			'{$dados['imagem']}',
 			'{$dados['descricao']}',
-			{$dados['qtd']},
-			{$dados['valor']}";
+			{$dados['qtde']},
+			{$dados['valor']})";
 
 		return $this->conexao->query($sql);
 

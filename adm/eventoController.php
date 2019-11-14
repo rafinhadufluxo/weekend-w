@@ -19,8 +19,8 @@
                     $dados ['idFabricante'] = $_POST['idFabricante'] == 0 ?  'NULL' :  $_POST['idFabicante'];
                     $dados ['imagem'] = (!empty($_FILES['arquivos']['name']))? $_FILES['arquivos']['name'] :' ';
                     $dados['descricao'] = $_POST['descricao'];
-                    $dados['qtd'] = isset($_POST['quantidade'])? 1: 0;
-                    $dados['valor'] = isset($_POST['valor'])? 1: 0;
+                    $dados['qtde'] = isset($_POST['quantidade'])? $_POST['quantidade'] : 0;
+                    $dados['valor'] = isset($_POST['valor'])? $_POST['valor'] : 0;
 
                     $evento = new Evento();
                     $resultado = $evento->cadastrar($dados);
