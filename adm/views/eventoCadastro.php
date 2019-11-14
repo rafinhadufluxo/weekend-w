@@ -1,8 +1,8 @@
-<h2>Cadastro de Produtos</h2>
+<h2>Cadastro de evento</h2>
 <form action="" method="post" id="form-cadastro" enctype="multipart/form-data">
 	<div>
 		<fieldset>
-			<legend><strong>Dados do Produto</strong></legend>
+			<legend><strong>Dados do Evento</strong></legend>
 			<div class="form-item">
 				<label for="nome" class="rotulo">Nome:</label>
 				<input type="text" id="nome" name="nome" size="50" required autofocus>								

@@ -5,13 +5,13 @@
 <div class="conteiner">
     <main>
         <?php
-        require "../classes/Produto.php";
+        require "../classes/Evento.php";
         require "../classes/Fabricante.php";
         require "../includes/functions.php";
         if(isset($_GET['acao'])){
             switch($_GET['acao']){
                 case "cadastro":
-                $titulo = "Cadastrar Produto";
+                $titulo = "Cadastrar Evento";
                 if(isset($_POST['cadastrar'])){
                     //dados foram submetidos
                     $dados = array();
@@ -22,48 +22,48 @@
                     $dados['qtd'] = isset($_POST['quantidade'])? 1: 0;
                     $dados['valor'] = isset($_POST['valor'])? 1: 0;
 
-                    $produto = new Produto();
-                    $resultado = $produto->cadastrar($dados);
+                    $evento = new Evento();
+                    $resultado = $evento->cadastrar($dados);
                     if($resultado){
-                        $mensagem = "O produto <strong> {$dados['nome']}</strong>
+                        $mensagem = "O evento <strong> {$dados['nome']}</strong>
                                     foi cadastro com sucesso";
 
                                     //tenta upload
                         if(!move_uploaded_file($_FILES['arquivo']['tmp_name'],
-                            "../img/produtos/{$_FILES['arquivo']['name']}")){
+                            "../img/vintage/{$_FILES['arquivo']['name']}")){
                             
                             $mensagem .= "<br> No entanto, a imagem não pode ser enviada. Contate o suporte";
                         }
 
                     }else{
-                        $mensagem = "Erro. O produto <strong> {$dados['nome']}
+                        $mensagem = "Erro. O evento <strong> {$dados['nome']}
                                         </strong> não foi cadastrado";
-                        $mensagem .= $produto->erro();
+                        $mensagem .= $evento->erro();
                     }
-                    include 'views/produtoConfirmacao.php';
+                    include 'views/eventoConfirmacao.php';
 
                 }else{
-                    include "views/produtoCadastro.php";
+                    include "views/eventoCadastro.php";
                 }
 
                 break;
 
                 case "altera":
-                $titulo = "Alteração de produto";
+                $titulo = "Alteração do evento";
                 break;
 
                 case "exclui":
-                $titulo = "Exclusão de Produto";
+                $titulo = "Exclusão do evento";
                 break;
             };
 
         }
         else{
 
-            $titulo = "relatorio de produtos";
-            $produto = new Produto();
-            $lista = $produto->listarTodos();
-            include "views/produtoIndex.php";
+            $titulo = "relatorio de evento";
+            $evento = new Evento();
+            $lista = $evento->listarTodos();
+            include "views/eventoIndex.php";
 
         };
 

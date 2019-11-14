@@ -13,7 +13,7 @@
             <ul class="nav-ul">
                 <div class="right-element">
 
-                    <li><a href="produtoController.php">Produtos</a></li>
+                    <li><a href="eventoController.php">Evento</a></li>
                     <li><a href="#">Clientes</a></li>
                     <li><a href="#">Pedidos</a></li>
                     <li><a href="#">Sair</a></li>

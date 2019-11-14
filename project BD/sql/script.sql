@@ -1,22 +1,37 @@
-DROP DATABASE IF EXIST weekend
+DROP DATABASE IF EXISTS weekend;
 
 CREATE DATABASE weekend DEFAULT CHARACTER SET uft8 COLLATE uft8_general_ci;
 
 USE weekend;
 
+DROP USER IF EXISTS 'admweekend'@'localhost';
+
+CREATE USER 'admweekend'@'localhost' IDENTIFIED BY '123456'; 
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON rent.* TO 'admweekend'@'localhost';
+
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuario`
+-- Estrutura da tabela `fabricante`
+--
+CREATE TABLE fabricante (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,  
+  nome VARCHAR(50) NOT NULL   
+);
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `cliente`
 --
 
-DROP TABLE IF EXISTS `usuario`;
-CREATE TABLE IF NOT EXISTS `usuario` (
-  `id_cliente` int(11) NOT NULL AUTO_INCREMENT,
+DROP TABLE IF EXISTS `cliente`;
+CREATE TABLE IF NOT EXISTS `cliente` (
+  `idCliente` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `senha` int(255) DEFAULT NULL,
-  PRIMARY KEY (`id_cliente`)
+  `senha` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`idCliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -27,16 +42,15 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 
 DROP TABLE IF EXISTS `eventos`;
 CREATE TABLE IF NOT EXISTS `eventos` (
-  `id_evento` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(100) DEFAULT NULL,
-  `data` date DEFAULT NULL,
-  `local` varchar(100) DEFAULT NULL,
-  `valor` int(45) DEFAULT NULL,
-  `quantidade` int(50) DEFAULT NULL,
-  `descricao` text DEFAULT NULL,
-  
-  PRIMARY KEY (`id_evento`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `id` INTEGER AUTO_INCREMENT PRIMARY KEY,  
+  `nome` VARCHAR(50) NOT NULL, 
+  `idFabricante` INTEGER,  
+  `imagem` VARCHAR(50), 
+  `descricao` TEXT, 
+  `qtde` integer,
+  `valor` real,
+  FOREIGN KEY (idFabricante) REFERENCES fabricante(id) 
+)
 
 -- --------------------------------------------------------
 
@@ -46,26 +60,20 @@ CREATE TABLE IF NOT EXISTS `eventos` (
 
 DROP TABLE IF EXISTS `ingressos`;
 CREATE TABLE IF NOT EXISTS `ingressos` (
-  `id_ingresso` int(11) NOT NULL AUTO_INCREMENT,
-  `id_cliente` int(11) DEFAULT NULL,
-  `id_evento` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id_ingresso`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `idIngresso` INTEGER AUTO_INCREMENT PRIMARY KEY, 
+  `qtd` INTEGER, 
+  `idCliente` INTEGER,
+  `idEvento` INTEGER,
+  `dataPedido` DATETIME,
+ 
+  FOREIGN KEY (idCliente) REFERENCES cliente(idCliente),
+  FOREIGN KEY (idEvento) REFERENCES eventos(id)
+);
 
 -- --------------------------------------------------------
 
---
--- Estrutura da tabela `user_admin`
---
-
-DROP TABLE IF EXISTS `user_admin`;
-CREATE TABLE IF NOT EXISTS `user_admin` (
-  `id_user_admin` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `senha` int(255) DEFAULT NULL,
-  PRIMARY KEY (`id_user_admin`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1; 
-
-INSERT INTO `user_admin` (`id_user_admin`, `nome`, `email`, `senha`) VALUES
+INSERT INTO `Cliente` (`idAdm`, `nome`, `email`, `senha`) VALUES
 (1, 'admin', 'admin', 'admin@admin', 'rafinha');
+
+
+

@@ -1,11 +1,11 @@
-<h2>Alteração de Produtos</h2>
+<h2>Alteração do Evento</h2>
 <form action="" method="post" id="form-cadastro" enctype="multipart/form-data">
 	<div>
 		<fieldset>
-			<legend><strong>Dados do Produto</strong></legend>
+			<legend><strong>Dados do Evento</strong></legend>
 			<div class="form-item">
 				<label for="nome" class="rotulo">Nome:</label>
-				<input type="text" id="nome" name="nome" size="50" required autofocus value="<?=$prod[0]['nomeProduto']?>">	
+				<input type="text" id="nome" name="nome" size="50" required autofocus value="<?=$prod[0]['nomeEvento']?>">	
 			</div>
 			<div class="form-item">
 				<label for="fabricante" class="rotulo">Fabricante:</label>
@@ -50,7 +50,7 @@
 				<label class="rotulo"></label>
 				<input type="submit" id="botao" value="Alterar" name="alterar">
 				<input type="reset" value="Limpar">
-				<input type="hidden" name="idProduto" value="<?=$prod[0]['idProduto'];?>">
+				<input type="hidden" name="idEvento" value="<?=$prod[0]['idEvento'];?>">
 			</div>						
 		</fieldset>
 	</div>
