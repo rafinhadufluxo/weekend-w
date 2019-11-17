@@ -43,6 +43,7 @@
     
 
     <!-- rodape -->
+    <script src="js/cad_cliente.js"></script>
     <?php include "includes/rodape.php"; ?>
     <!-- fim rodape -->
 

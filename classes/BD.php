@@ -11,8 +11,9 @@ class BD {
 	}
 
 	function select($sql){
-		// recebe um select qualquer, executa e devolve um array de resultados
+	
 		$stmt = $this->conexao->query($sql);
+
 		return $stmt->fetchAll();
 	}
 
