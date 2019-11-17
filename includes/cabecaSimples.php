@@ -23,12 +23,14 @@
 
                 </div>
                 <div class="left-element">
-                    <li><a id="login">Login <a href="login.php"><span id="ItensMusic"><img src="Img/pessoa-sexo.png"
-                                        width="32" alt="pessoa-sexo"></a></a>
-                    </li>
-                    <li><a id="musicaTOCA"><a href="#">Music <span id="ItensMusic"><img src="Img/play-button.png"
-                                        width="32" alt="music"></a></li>
-
+                    <div class="left-element">
+                        <h1>Olá, visitante! </h1>
+                        <li><a id="login">Login <a href="login.php"><span><img src="Img/pessoa-sexo.png" width="30"
+                                            alt="pessoa-sexo"></a></a>
+                        </li>
+                        <li><a id="carinho"><a href="carrinho.php">carrinho <span id="numItensCarrinho">(2)</span><img
+                                        src="Img/cart.png" width="30" alt="carrinho de compras"></a></span>
+                    </div>
                 </div>
             </ul>
         </nav>
