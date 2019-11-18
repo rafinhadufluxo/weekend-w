@@ -7,7 +7,7 @@
 			<div>
 				<form action="autenticacao.php" method="post" id="form-contato">
 					<fieldset>
-						<legend><strong>Já possui cadastro?</strong></legend>
+						
 						<div class="form-item">
 							<label for="usuario" class="rotulo">Login ou e-mail:</label>
 							<input type="text" id="usuario" name="usuario" size="50">
@@ -60,7 +60,6 @@
 <!-- rodape -->
 <?php include "includes/rodape.php"; ?>
 <!-- fim rodape -->
-<script src="js/entra.js"></script>
 
 </body>
 

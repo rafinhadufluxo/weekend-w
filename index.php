@@ -17,21 +17,23 @@
                     require_once "classes/Evento.php";
                     require_once "includes/functions.php";
 
-                    $produto = new Evento();
+                    $evento = new Evento();
 
                     if (isset($_GET['busca'])) {
-                        $lista = $produto->filtroBusca($_GET['busca']);
+                        $listas = $evento->filtroBusca($_GET['busca']);
                         $titulo =
                             "Resultado da busca por \"{$_GET['busca']}\" ";
                         
                     } else {
-                        $lista = $produto->filtroNovidades();
+                        $listas = $evento->filtroNovidades();
                         $titulo = "Novidades";
                     }
+                    // var_dump($lista);
+
 
                     // echo "<pre>";
-                    // print_r($lista);
-                    // echo "</pre>";
+                    //print_r($lista);
+                    //echo "</pre>";
                     require_once "views/listaEventos.php";
 
                 ?>

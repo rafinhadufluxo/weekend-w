@@ -27,7 +27,7 @@ class Evento{
 
 	function filtroNovidades() {
         $sql = "SELECT * FROM evento ORDER BY id desc limit 10";
-        $result = $this->conexao->query($sql);
+		$result = $this->conexao->query($sql);
         return $result;
     }
 

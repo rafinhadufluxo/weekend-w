@@ -37,7 +37,7 @@
 			</div>
 			<div class="form-item">
 				<label for="valor" class="rotulo">Valor do evento</label>
-				<input type="text" id="valor" name="valor" placeholder="0.00" required onblur="document.getElementById('total').innerHTML = (this.value - document.getElementById('desconto').value).toFixed(2)">
+				<input type="text" id="valor" name="valor" placeholder="0.00" required onblur= "document.getElementById('total').innerHTML .toFixed(2)">
 			</div>
 			<div class="form-item">						
 				<label class="rotulo">Total (R$):</label>

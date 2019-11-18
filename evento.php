@@ -11,44 +11,34 @@
                 echo "<h2>Identificador de evento inválido</h2>";
             } else {
                 $obj = new Evento();
-                $evento = $obj->consultaEvento()($_GET['id']);
+                $evento = $obj->consultaEvento($_GET['id']);
                 if (empty($evento)) {
                     echo "<h2>Evento não encontrado</h2>";
                 } else {
                     ?>
                     <div class="detalhes-evento">
                         <h2><?= $evento[0]['nomeEvento']; ?></h2>
+                        <br>
                         <figure>
                             <img src="Img/vintage/<?= mostraImagem($evento[0]['imagem']); ?>" alt="<?= $evento[0]['nomeEvento']; ?>">
                         </figure>
                         <div class="form">
+                        
                             <p>
-                                <?php
-                                        if ($evento[0]['desconto'] == 0) {
-                                            ?>
-                                    <span class="precoFinal">
-                                        <?= formataPreco($evento[0]['valor']); ?>
-                                    </span>
-                                <?php
-                                        } else {
-                                            ?>
-                                    De <span class="precoInicial">
-                                        <?= formataPreco($evento[0]['valor']); ?>
-                                    </span> por
-                                    <span class="precoFinal">
-                                        <?= formataPreco($evento[0]['valor'] - $evento[0]['desconto']); ?>
-                                    </span>
-                                <?php
-                                        }
-                                        ?>
+                             <br><br>
+                                <span class="precoFinal">
+                                
+                                    <?= formataPreco($evento[0]['valorFinal']); ?>
+                                </span>
+                               
                             </p>
-
+                            <br><br>
                             <form action="adiciona.php" method="post" id="add-carrinho">
                                 <label for="quantidade">Quantidade:</label>
                                 <input type="number" name="quantidade" value="1" min="1">
                                 <input type="hidden" name="id" value="<?= $evento[0]['idEvento'] ?>">
                                 <input type="hidden" name="nome" value="<?= $evento[0]['nomeEvento'] ?>">
-                                <input type="hidden" name="valorFinal" value="<?= ($evento[0]['valor'] - $evento[0]['desconto']) ?>">
+                                <input type="hidden" name="valorFinal" value="<?= ($evento[0]['valorFinal']) ?>">
                                 <br><br>
                                 <input type="submit" value="Adicionar ao Carrinho" name="adicionar">
                                 <br><br>
