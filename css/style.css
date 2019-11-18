@@ -17,12 +17,36 @@ h3 {
     color: black;
 }
 
+a {
+    text-decoration: none;
+    /* todos os links sem sublinhado */
+}
+
+.teste {
+    /* sobre termo de privacidade */
+    text-align: justify;
+    color: black;
+}
+
+
+/************************************************************************************ busca */
+
+section.busca {
+    border-radius: 20px;
+    background-color: #1A1919;
+    padding: 12px;
+}
+
+.busca input[type=search] {
+    width: 70%;
+}
+
 
 /* NAVIGATION */
 
 nav.front-nav {
     background: #f4f7f8;
-    padding: .5rem;
+    /*padding: .5rem;*/
     /* padding-bottom: 0; */
     text-transform: uppercase;
 }
@@ -69,6 +93,7 @@ nav ul.nav-ul {
 .nav-ul .right-element {
     grid-area: d1;
     display: flex;
+    align-content: flex-end;
 }
 
 .nav-ul .signs {
@@ -84,6 +109,8 @@ nav ul.nav-ul {
     display: flex;
     align-content: flex-end;
     margin-left: 200px;
+    color: black;
+    padding: 4px;
 }
 
 

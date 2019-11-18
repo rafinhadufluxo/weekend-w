@@ -12,7 +12,7 @@ class Evento{
 		$sql = "SELECT evento.id as idEvento, evento.nome as nomeEvento, imagem, descricao,  
 		qtde, valor as valorFinal, fabricante.id as idFabricante, 
 		fabricante.nome as nomeFabricante FROM evento LEFT JOIN fabricante ON 
-		evento.idFabricante = fabricante.id WHERE evento.id = $id ";
+		evento.idFabricante = fabricante.id WHERE evento.id = $id";
 		return $this->conexao->select($sql);	
 	}
 
@@ -24,6 +24,12 @@ class Evento{
 		
 		return $this->conexao->select($sql);	
 	}
+
+	function filtroNovidades() {
+        $sql = "SELECT * FROM evento ORDER BY id desc limit 10";
+        $result = $this->conexao->query($sql);
+        return $result;
+    }
 
 	function cadastrar ($dados){
 		$sql= "INSERT INTO evento(nome,idFabricante,imagem,descricao,qtde, valor) 
@@ -37,6 +43,11 @@ class Evento{
 		return $this->conexao->query($sql);
 
 	}
+	function filtroBusca($palavraChave) {
+        $sql = "SELECT * FROM evento where nome like '%{$palavraChave}%' ORDER BY nome";
+        $result = $this->conexao->query($sql);
+        return $result;
+    } 
 	
 	function alterar($dados){
 		$sql= "UPDATE evento SET  nome = '{$dados['nome']}', idFabricante = '{$dados['idFabricante']}',

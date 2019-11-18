@@ -1,5 +1,5 @@
 <?php
-include "classes/Cliente.php";
+include "classes/cliente.php";
 $client = new Cliente();
 $dados = $client->autenticar($_POST['usuario']);
 

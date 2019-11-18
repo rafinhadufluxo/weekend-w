@@ -22,12 +22,17 @@
                 </div>
                 <div class="left-element">
                     <div class="left-element">
-                        <h1>Olá, visitante! </h1>
-                        <li><a id="login">Login <a href="login.php"><span><img src="Img/pessoa-sexo.png" width="30"
-                                            alt="pessoa-sexo"></a></a>
-                        </li>
-                        <li><a id="carinho"><a href="carrinho.php">carrinho <span id="numItensCarrinho">(2)</span><img
-                                        src="Img/cart.png" width="30" alt="carrinho de compras"></a></span>
+                        <?php
+                        if (isset($_SESSION['nome'])) { ?><li>
+                            <span id="login">Olá, <?= $_SESSION['nome']; ?>
+                                (<a href="sair.php">sair</a>)</span></li>
+                        <?php
+                        } else { ?>
+                            <li><span id="login">Olá, visitante! (<a href="login.php">login</a>)</span></li>
+                        <?php
+                        }
+                        ?><br>
+                        <li><span id="carrinho"><a href="carrinho.php">carrinho <span id="numItensCarrinho">(<?= isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : "0"; ?>)</span><img src="Img/cart.png" width="32" alt="carrinho de compras"></a></span></li>
                     </div>
                 </div>
             </ul>

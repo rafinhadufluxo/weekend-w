@@ -9,11 +9,14 @@
                         <h2>Cadastre-se</h2>
                         <br><br>
                         <hr>
-                        <label for="name-user"><b>user name </b></label>
-                        <input type="text" placeholder="user name" name="name" required>
+                        <label for="name-user"><b>Nome Completo </b></label>
+                        <input type="text" placeholder="nome completo" name="user-name" required>
 
                         <label for="email"><b>Email</b></label>
                         <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="name-user"><b>User name </b></label>
+                        <input type="text" placeholder="user name" name="name" required>
 
                         <label for="psw"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
@@ -22,7 +25,7 @@
                         <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
                         <hr>
                         <br>
-                        <p>By creating an account you agree to our <a href="#">Termos e privacidade</a>.</p><br>
+                        <p>By creating an account you agree to our <a href="licenca.php">Termos e privacidade</a>.</p><br>
                         <input type="checkbox" name="vehicle2" value="Car">Aceito os termos de privacidade
 
                         <button type="submit" class="registerbtn">Register</button>
@@ -40,7 +43,6 @@
 
     </div>
     <br>
-    
 
     <!-- rodape -->
     <script src="js/cad_cliente.js"></script>
