@@ -35,10 +35,12 @@ section.busca {
     border-radius: 20px;
     background-color: #1A1919;
     padding: 12px;
+    text-align: center;
 }
 
 .busca input[type=search] {
     width: 70%;
+    padding: 10px;
 }
 
 

@@ -50,13 +50,14 @@ class Evento{
     } 
 	
 	function alterar($dados){
-		$sql= "UPDATE evento SET  nome = '{$dados['nome']}', idFabricante = '{$dados['idFabricante']}',
-		    imagem = '{$dados['imagem']}', descricao = '{$dados['descricao']}', qtd =  '{$dados['qtd']}',
-			valor = '{$dados['valor']}', WHERE id = {$dados ['$id']}";
-
+		
+		$sql= "UPDATE evento SET  nome = '{$dados['nome']}', idFabricante = {$dados['idFabricante']},
+		    imagem = '{$dados['imagem']}', descricao = '{$dados['descricao']}', qtde =  {$dados['qtde']},
+			valor = {$dados['valor']} WHERE id = {$dados ['id']}";	
 		return $this->conexao->query($sql);
 
 	}
+
 
 	function excluir($id){
 		$sql="DELETE FROM evento WHERE id=$id";

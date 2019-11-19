@@ -1,5 +1,5 @@
 <h2><?$titulo;?></h2>
-<p>|  <a href="eventoController.php?acao=cadastro"> Inserir novo </a> | </p>
+<p>|  <a href="eventoController.php?acao=cadastro">Inserir novo</a> | </p>
 
 <table border = "1" style="border-collapse: collapse">
     <tr>
@@ -22,8 +22,8 @@
                 <td> <?= $evento['nomeFabricante'];?> </td>
                 <td> <?= $evento['valorFinal'];?> </td>
                 <td> 
-                    <a href="eventoController.php?acao=altera&id = <?=$evento['idEvento'];?>"> Alterar </a> |
-                    <a href="eventoController.php?acao=exclui&id = <?=$evento['idEvento'];?>">excluir </td>
+                    <a href="eventoController.php?acao=altera&id=<?=$evento['idEvento'];?>">Alterar</a>|
+                    <a href="eventoController.php?acao=exclui&id=<?=$evento['idEvento'];?>">excluir</td>
             </tr>
             <?php
 
@@ -32,3 +32,4 @@
     ?>
 
 </table>
+

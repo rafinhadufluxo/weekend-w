@@ -1,4 +1,5 @@
-<h2>Alteração do Evento</h2>
+<h2><?php echo $titulo; ?></h2>
+<br>
 <form action="" method="post" id="form-cadastro" enctype="multipart/form-data">
 	<div>
 		<fieldset>
@@ -33,18 +34,18 @@
 			</div>			
 		</fieldset>
 		<fieldset>
-			<legend><strong>Dados da locação</strong></legend>
+			<legend><strong>Dados do ingresso</strong></legend>
 			<div class="form-item">
 				<label for="quantidade" class="rotulo">Quantidade Disponível:</label>
 				<input type="number" id="quantidade" name="quantidade"  value="<?=$prod[0]['qtde']?>" min="1">
 			</div>
 			<div class="form-item">
-				<label for="valor" class="rotulo">Valor </label>
-				<input type="text" id="valor" name="valor" placeholder="0.00" value="<?=$prod[0]['valor']?>" required onblur="document.getElementById('total').innerHTML = (this.value - document.getElementById('desconto').value).toFixed(2)">
+				<label for="valor" class="rotulo">Valor do ingresso:</label>
+				<input type="text" id="valor" name="valor" placeholder="0.00" required onblur="document.getElementById('total').innerHTML = (this.value - document.getElementById('desconto').value).toFixed(2)">
 			</div>
 			<div class="form-item">						
 				<label class="rotulo">Total (R$):</label>
-				<span id="total"><strong><?=formataPreco($prod[0]['valor'] - $prod[0]['desconto']);?></strong></span>
+				<span id="total"><strong><?=formataPreco($prod[0]['valorFinal']);?></strong></span>
 			</div>
 			<div class="form-item">
 				<label class="rotulo"></label>

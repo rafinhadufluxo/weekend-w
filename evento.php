@@ -23,7 +23,7 @@
                             <img src="Img/vintage/<?= mostraImagem($evento[0]['imagem']); ?>" alt="<?= $evento[0]['nomeEvento']; ?>">
                         </figure>
                         <div class="form">
-                        
+            
                             <p>
                              <br><br>
                                 <span class="precoFinal">

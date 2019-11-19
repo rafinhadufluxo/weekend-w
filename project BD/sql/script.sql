@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `evento` (
   `nome` VARCHAR(50) NOT NULL, 
   `idFabricante` INTEGER,  
   `imagem` VARCHAR(50), 
-  `descricao` TEXT, 
+  `descricao` TEXT,
   `qtde` integer,
   `valor` real,
   FOREIGN KEY (idFabricante) REFERENCES fabricante(id) 

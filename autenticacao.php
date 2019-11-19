@@ -1,15 +1,23 @@
 <?php
-include "classes/cliente.php";
+include "classes/Cliente.php";
 $client = new Cliente();
 $dados = $client->autenticar($_POST['usuario']);
+
 
 if(empty($dados)){ // usuario nao existe
 	header("Location: login.php?erro=1");
 }
 else{ // usuario existe
 	$pass = md5($_POST['senha']);
-	if($pass != $dados[0]['senha']){
-		header("Location: login.php?erro=2");
+	$passe = ($_POST['usuario']);
+	print_r($pass);
+	if($pass == $dados[0]['senha']){
+		//print_r($dados[0]);
+		//header("Location: login.php?erro=2");
+		if($passe !=  $dados[0]['nome']){
+			header("Location: login.php?erro=2");
+
+		}
 	}
 	else{ // login e senha corretos
 		session_start(); // abre uma nova sessao

@@ -1,4 +1,5 @@
-<h2>Cadastro de evento</h2>
+<h2><?php echo $titulo; ?></h2>
+<br>
 <form action="" method="post" id="form-cadastro" enctype="multipart/form-data">
 	<div>
 		<fieldset>
@@ -27,18 +28,20 @@
 			<div class="form-item">
 				<label for="desc" class="rotulo">Descrição:</label>
 				<textarea name="descricao" rows="5" cols="30" id="desc"></textarea>
-			</div>			
+			</div>
+								
 		</fieldset>
 		<fieldset>
-			<legend><strong>Dados do evento</strong></legend>
+			<legend><strong>Dados da compra</strong></legend>
 			<div class="form-item">
 				<label for="quantidade" class="rotulo">Quantidade Disponível:</label>
 				<input type="number" id="quantidade" name="quantidade" value="1" min="1">
 			</div>
 			<div class="form-item">
-				<label for="valor" class="rotulo">Valor do evento</label>
-				<input type="text" id="valor" name="valor" placeholder="0.00" required onblur= "document.getElementById('total').innerHTML .toFixed(2)">
+				<label for="valor" class="rotulo">Valor do ingresso:</label>
+				<input type="text" id="valor" name="valor" placeholder="0.00" required onblur="document.getElementById('total').innerHTML = (this.value - document.getElementById('desconto').value).toFixed(2)">
 			</div>
+			
 			<div class="form-item">						
 				<label class="rotulo">Total (R$):</label>
 				<span id="total"><strong>0.00</strong></span>
