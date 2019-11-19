@@ -4,9 +4,11 @@
 
 Sistema de venda de ingressos (FESTA)
 
-## Autores ##
+## Autora ##
 
 - **[Rafa Arruda](https://github.com/mazarafa)** - *Criadora do repositório e desenvolvedora do sistema*.
+
+## Orientadoras  ##
 - [Dra Raquel Pegoraro](https://github.com/raquelpegoraro) - *Professora*
 - [Dra Andressa Sebben](https://github.com/asebben) - *Professora*
 
