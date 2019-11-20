@@ -3,7 +3,6 @@ require_once ("BD.php");
 class Cliente
 {
     private $conexao;
-
     function __construct() {
         $this->conexao = new BD();
     }    

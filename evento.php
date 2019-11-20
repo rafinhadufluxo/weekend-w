@@ -48,7 +48,10 @@
                             <h4>Detalhes do Evento</h4>
                             <p class="fab">Fabricante: <?= ($evento[0]['nomeFabricante'] == NULL) ? "Não informado" : $evento[0]['nomeFabricante']; ?></p>
 
+                            <p class="dataEvento">Data: <?= nl2br($evento[0]['dataEvento']) ?></p>
+                            <p class="LocalEvento">Local: <?= nl2br($evento[0]['LocalEvento']) ?></p>
                             <p class="desc">Descricao: <?= nl2br($evento[0]['descricao']) ?></p>
+                            
 
 
 

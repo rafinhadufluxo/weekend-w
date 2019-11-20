@@ -47,12 +47,12 @@
 			</div>
 			<div class="form-item">
 				<label for="valor" class="rotulo">Valor unitário:</label>
-				<input type="text" id="valor" name="valor" placeholder="0.00" required onkeyup="document.getElementById('total').innerHTML = (this.value)">
+				<input type="text" id="valor" name="valor" placeholder="0.00" required onkeyup="formataPreco(this)">
 			</div>
 			
 			<div class="form-item">						
 				<label class="rotulo">Total (R$):</label>
-				<span id="total"><strong>0.00</strong></span>
+				<span id="total"style="font-weight:600;"><strong>0.00</strong></span>
 			</div>
 			<div class="form-item">
 				<label class="rotulo"></label>
@@ -62,3 +62,4 @@
 		</fieldset>
 	</div>
 </form>
+<script src="../js/altera-evento.js" type="text/javascript"></script>

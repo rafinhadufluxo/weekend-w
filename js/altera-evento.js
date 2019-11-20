@@ -5,3 +5,5 @@ function formataPreco(input) {
 
 
 }
+
+// valor formato do adm

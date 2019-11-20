@@ -41,6 +41,7 @@
 							<strong>Ainda não é nosso cliente?</strong>
 						</legend>
 						<p>
+						<br>
 							<a href="cad_cliente.php">
 								Cadastre-se</a> agora para utilizar nossos serviços
 						</p>

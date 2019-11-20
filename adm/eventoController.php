@@ -70,7 +70,7 @@
 						$mensagem = "O evento <strong>{$dados['nome']}</strong> foi alterado com sucesso";
 						// TENTA O UPLOAD
 						if(!empty($_FILES['arquivo']['name'])){
-							if(!move_uploaded_file($_FILES['arquivo']['tmp_name'], "../Img/vintage/{$_FILES['arquivo']['name']}")){
+							if(!move_uploaded_file($_FILES['arquivo']['tmp_name'], "Img/vintage/{$_FILES['arquivo']['name']}")){
 								$mensagem.="<br>No entanto, a imagem não pode ser enviada. Contate o suporte";
 							}
 						}

@@ -24,10 +24,20 @@
                     </figcaption>                          
                 </figure>      
             </a>              
-            <p class="rapida">compra rápida</p>
+            <?php
+            if(@array_key_exists($lista['id'], $_SESSION['carrinho'])){
+                echo "<p class='noCarrinho'>no carrinho!</p>";
+            }
+            else{
+                $preco = $lista['valor'];
+                echo "<p class='rapida' id='{$lista['id']}' 
+                onclick=\"noCarrinho({$lista['id']}, '{$lista['nome']}', $preco)\">no carrinho!</p>";
+            }
+            ?>       
         </div>   
         <!-- fim produto -->       
         <?php  
         }
     }
     ?>
+<script src="js/rapida.js"></script>

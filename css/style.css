@@ -33,6 +33,8 @@ a {
 }
 
 
+
+
 /************************************************************************************ busca */
 
 section.busca {
@@ -45,6 +47,7 @@ section.busca {
 .busca input[type=search] {
     width: 70%;
     padding: 10px;
+    border-radius: 15px;
 }
 
 
