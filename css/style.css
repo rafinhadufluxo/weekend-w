@@ -9,6 +9,10 @@ body {
     background-color: #F7F7F7;
 }
 
+td {
+    padding: 15px;
+}
+
 h1,
 h2,
 h3 {
@@ -34,7 +38,7 @@ a {
 section.busca {
     border-radius: 20px;
     background-color: #1A1919;
-    padding: 12px;
+    padding: 4px;
     text-align: center;
 }
 

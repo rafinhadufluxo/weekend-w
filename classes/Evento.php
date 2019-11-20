@@ -9,7 +9,7 @@ class Evento{
 	}
 
 	function consultaEvento($id){
-		$sql = "SELECT evento.id as idEvento, evento.nome as nomeEvento, imagem, descricao,  
+		$sql = "SELECT evento.id as idEvento, evento.nome as nomeEvento, imagem, LocalEvento, dataEvento, descricao,  
 		qtde, valor as valorFinal, fabricante.id as idFabricante, 
 		fabricante.nome as nomeFabricante FROM evento LEFT JOIN fabricante ON 
 		evento.idFabricante = fabricante.id WHERE evento.id = $id";
@@ -17,7 +17,7 @@ class Evento{
 	}
 
 	function listarTodos($campo= "evento.nome", $ordem="asc"){
-		$sql = "SELECT evento.id as idEvento, evento.nome as nomeEvento, imagem, descricao, 
+		$sql = "SELECT evento.id as idEvento, evento.nome as nomeEvento, imagem, LocalEvento, dataEvento, descricao, 
 		qtde, valor as valorFinal, fabricante.id as idFabricante, 
 		fabricante.nome as nomeFabricante FROM evento LEFT JOIN fabricante 
 		ON evento.idFabricante = fabricante.id order by $campo $ordem";
@@ -32,10 +32,12 @@ class Evento{
     }
 
 	function cadastrar ($dados){
-		$sql= "INSERT INTO evento(nome,idFabricante,imagem,descricao,qtde, valor) 
+		$sql= "INSERT INTO evento(nome,idFabricante,imagem,LocalEvento,dataEvento,descricao,qtde, valor) 
 		VALUES('{$dados['nome']}',
 			{$dados['idFabricante']},
 			'{$dados['imagem']}',
+			'{$dados['LocalEvento']}',
+			'{$dados['dataEvento']}',
 			'{$dados['descricao']}',
 			{$dados['qtde']},
 			{$dados['valor']})";
@@ -52,7 +54,7 @@ class Evento{
 	function alterar($dados){
 		
 		$sql= "UPDATE evento SET  nome = '{$dados['nome']}', idFabricante = {$dados['idFabricante']},
-		    imagem = '{$dados['imagem']}', descricao = '{$dados['descricao']}', qtde =  {$dados['qtde']},
+		    imagem = '{$dados['imagem']}', LocalEvento = '{$dados['LocalEvento']}', dataEvento = '{$dados['dataEvento']}', descricao = '{$dados['descricao']}', qtde =  {$dados['qtde']},
 			valor = {$dados['valor']} WHERE id = {$dados ['id']}";	
 		return $this->conexao->query($sql);
 

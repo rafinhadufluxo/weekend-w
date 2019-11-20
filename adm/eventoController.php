@@ -16,8 +16,10 @@
                     //dados foram submetidos
                     $dados = array();
                     $dados ['nome'] = $_POST['nome'];
-                    $dados ['idFabricante'] = $_POST['idFabricante'] == 0 ?  'NULL' :  $_POST['idFabicante'];
+                    $dados ['idFabricante'] = $_POST['idFabricante'] == 0 ?  'NULL' :  $_POST['idFabricante'];
                     $dados ['imagem'] = (!empty($_FILES['arquivos']['name']))? $_FILES['arquivos']['name'] :' ';
+                    $dados ['LocalEvento'] = $_POST['LocalEvento'];
+                    $dados ['dataEvento'] = $_POST['dataEvento'];
                     $dados['descricao'] = $_POST['descricao'];
                     $dados['qtde'] = isset($_POST['quantidade'])? $_POST['quantidade'] : 0;
                     $dados['valor'] = isset($_POST['valor'])? $_POST['valor'] : 0;
@@ -57,6 +59,8 @@
                     $dados ['nome'] = $_POST['nome'];
                     $dados ['idFabricante'] = $_POST['idFabricante'] == 0 ?  'NULL' :  $_POST['idFabricante'];
                     $dados ['imagem'] = (!empty($_FILES['arquivos']['name']))? $_FILES['arquivos']['name'] :' ';
+                    $dados ['LocalEvento'] = $_POST['LocalEvento'];
+                    $dados ['dataEvento'] = $_POST['dataEvento'];
                     $dados['descricao'] = $_POST['descricao'];
                     $dados['qtde'] = isset($_POST['quantidade'])? $_POST['quantidade'] : 0;
                     $dados['valor'] = isset($_POST['valor'])? $_POST['valor'] : 0;

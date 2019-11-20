@@ -22,7 +22,9 @@ class BD {
 	}
 
 	function erro(){
-		return mysqli_error($this->conexao);
+
+		return mysqli_error($this->conexao->query($sql));
+		//print_r($this);
 	}
 }
 ?>

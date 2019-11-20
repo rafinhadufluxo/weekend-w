@@ -28,6 +28,15 @@
 				<input type="file" name="arquivo" id="arquivo">
 				<input type="hidden" name="imagemAtual" value="<?=$prod[0]['imagem'];?>">
 			</div>
+			<div class="form-item">	
+				<label for="desc" class="rotulo">Local:</label>
+				<textarea name="LocalEvento" rows="5" cols="30" id="LocalEvento"><?=$prod[0]['LocalEvento']?></textarea>
+			</div>
+			<div class="form-item">
+				<label for="quantidade" class="rotulo">Data:</label>
+				<input value = "<?=$prod[0]['dataEvento']?>" name="dataEvento" id="dataEvento" type="text">
+			</div>
+				
 			<div class="form-item">
 				<label for="desc" class="rotulo">Descrição:</label>
 				<textarea name="descricao" rows="5" cols="30" id="desc"><?=$prod[0]['descricao']?></textarea>
@@ -40,12 +49,12 @@
 				<input type="number" id="quantidade" name="quantidade"  value="<?=$prod[0]['qtde']?>" min="1">
 			</div>
 			<div class="form-item">
-				<label for="valor" class="rotulo">Valor do ingresso:</label>
-				<input type="text" id="valor" name="valor" placeholder="0.00" required onblur="document.getElementById('total').innerHTML = (this.value - document.getElementById('desconto').value).toFixed(2)">
+				<label for="valor" class="rotulo">Valor Unitário:</label>
+				<input type="text" id="valor" name="valor" placeholder="0.00" required onkeyup="formataPreco(this)">
 			</div>
 			<div class="form-item">						
 				<label class="rotulo">Total (R$):</label>
-				<span id="total"><strong><?=formataPreco($prod[0]['valorFinal']);?></strong></span>
+				<span id="total" style="font-weight:600;"><strong><?=formataPreco($prod[0]['valorFinal']);?></strong></span>
 			</div>
 			<div class="form-item">
 				<label class="rotulo"></label>
@@ -56,3 +65,4 @@
 		</fieldset>
 	</div>
 </form>
+<script src="../js/altera-evento.js" type="text/javascript"></script>

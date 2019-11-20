@@ -26,20 +26,28 @@
 				<input type="file" name="arquivo" id="arquivo">
 			</div>
 			<div class="form-item">
+				<label for="desc" class="rotulo">Local:</label>
+				<textarea name="LocalEvento" rows="5" cols="30" id="LocalEvento"></textarea>
+			</div>
+			<div class="form-item">
+				<label for="valor" class="rotulo">Data:</label>
+				<input name="dataEvento" id="dataEvento" type="date">
+			</div>
+			<div class="form-item">
 				<label for="desc" class="rotulo">Descrição:</label>
 				<textarea name="descricao" rows="5" cols="30" id="desc"></textarea>
 			</div>
 								
 		</fieldset>
 		<fieldset>
-			<legend><strong>Dados da compra</strong></legend>
+			<legend><strong>Dados da venda</strong></legend>
 			<div class="form-item">
 				<label for="quantidade" class="rotulo">Quantidade Disponível:</label>
 				<input type="number" id="quantidade" name="quantidade" value="1" min="1">
 			</div>
 			<div class="form-item">
-				<label for="valor" class="rotulo">Valor do ingresso:</label>
-				<input type="text" id="valor" name="valor" placeholder="0.00" required onblur="document.getElementById('total').innerHTML = (this.value - document.getElementById('desconto').value).toFixed(2)">
+				<label for="valor" class="rotulo">Valor unitário:</label>
+				<input type="text" id="valor" name="valor" placeholder="0.00" required onkeyup="document.getElementById('total').innerHTML = (this.value)">
 			</div>
 			
 			<div class="form-item">						

@@ -6,6 +6,7 @@ CREATE TABLE `fabricante` (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,  
   nome VARCHAR(50) NOT NULL   
 );
+
 -- --------------------------------------------------------
 --
 -- Estrutura da tabela `eventos`
@@ -16,10 +17,13 @@ CREATE TABLE IF NOT EXISTS `evento` (
   `id` INTEGER AUTO_INCREMENT PRIMARY KEY,  
   `nome` VARCHAR(50) NOT NULL, 
   `idFabricante` INTEGER,  
-  `imagem` VARCHAR(50), 
+  `imagem` VARCHAR(50),
+  `LocalEvento` VARCHAR(50),
+  `dataEvento` DATETIME,
   `descricao` TEXT,
   `qtde` integer,
   `valor` real,
+
   FOREIGN KEY (idFabricante) REFERENCES fabricante(id) 
 );
 
@@ -39,26 +43,6 @@ CREATE TABLE IF NOT EXISTS `cliente` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -------------------------------------------------------------
---
--- Estrutura da Tabela Compra
--- 
-
-CREATE TABLE compra (
-  `idCompra` INTEGER AUTO_INCREMENT PRIMARY KEY,  
-  `idCliente` INTEGER,
-  FOREIGN KEY (idCliente) REFERENCES cliente(id)
-);
-
-CREATE TABLE itemCompra (
-  numPedido INTEGER,
-  idProduto INTEGER,
-  quantidade INTEGER,
-  PRIMARY KEY(numPedido, idProduto),
-  FOREIGN KEY (numPedido) REFERENCES pedido(numero),
-  FOREIGN KEY (idProduto) REFERENCES produto(id)
-);
-
--- --------------------------------------------------------
 --
 -- Estrutura da tabela `ingressos`
 --
@@ -94,10 +78,10 @@ INSERT INTO fabricante (nome, id) VALUES ('Spotify',1),
                                          ('Trap', 3), 
                                          ('KondZilla', 4);
 ------------------------------------------------------------------------------------------------------------------------------------------
-INSERT INTO evento (nome, idFabricante, imagem, descricao, qtde, valor) VALUES ('Calourada CC', 1, 'aa.png', 'Computer error em CC',  60, 10),
-                                                                                ('Open Bar', NULL, 'bb.png', 'Prepare o copo', 70, 30),
-                                                                                ('Rafis Chuchu', 2, 'she.jpg', 'Deu a louca na rave', 100, 5),
-                                                                                ('False Alfter', 3, NULL, 'teste',  25, 25),
-                                                                                ('Tributo Avicci',4,'life.jpg','sad alfter ',50,10);
+INSERT INTO evento (id,nome, idFabricante, imagem, LocalEvento,dataEvento, descricao, qtde, valor) VALUES (8,'Calourada CC', 1, 'aa.png','UFFS','2019-12-12','Computer error em CC',  60, 10),
+                                                                                (6,'Open Bar', NULL, 'bb.png', 'UFSC','2019-12-25','Prepare o copo', 70, 30),
+                                                                                (2,'Rafis Chuchu', 2, 'she.jpg','Av. Vitoria','2020-02-25', 'Deu a louca na rave', 100, 5),
+                                                                                (4,'False Alfter', 3, NULL,'Voz clube','2020-01-15', 'teste',  25, 25);
+                                                                               
 
 
