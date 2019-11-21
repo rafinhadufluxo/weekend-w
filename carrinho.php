@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <?php include "includes/cabecalho.php"; ?>
 	<!-- area central com 3 colunas -->
 	<div class="container">
@@ -32,7 +35,8 @@
 					</tr>
 					<?php
 					}
-					?>					
+					?>
+										
 					<tr class="linhaFinal">
 						<td colspan="3">Total do pedido:</td>
 						<td class="celulaValor">R$ <span id="totalPedido"></span></td>

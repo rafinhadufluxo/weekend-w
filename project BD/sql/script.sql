@@ -42,6 +42,25 @@ CREATE TABLE IF NOT EXISTS `cliente` (
   PRIMARY KEY (`idCliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
+-----------------------------------------------------------
+--
+-- Estrutura da tabela `compra`
+CREATE TABLE `compra` (
+  `idCompra` INTEGER AUTO_INCREMENT PRIMARY KEY,  
+  `idCliente` INTEGER,
+  `dataCompra` DATE,
+  FOREIGN KEY (idCliente) REFERENCES cliente(idCliente)
+);
+
+CREATE TABLE `itemCompra` (
+  numCompra INTEGER,
+  idEvento INTEGER,
+  quantidade INTEGER,
+  PRIMARY KEY(numCompra, idEvento),
+  FOREIGN KEY (numCompra) REFERENCES compra(idCompra),
+  FOREIGN KEY (idEvento) REFERENCES evento(id)
+);
+
 -------------------------------------------------------------
 --
 -- Estrutura da tabela `ingressos`

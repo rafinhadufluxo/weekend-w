@@ -31,7 +31,7 @@
             else{
                 $preco = $lista['valor'];
                 echo "<p class='rapida' id='{$lista['id']}' 
-                onclick=\"noCarrinho({$lista['id']}, '{$lista['nome']}', $preco)\">no carrinho!</p>";
+                onclick=\"compraRapida({$lista['id']}, '{$lista['nome']}', $preco)\">compra rápida</p>";
             }
             ?>       
         </div>   

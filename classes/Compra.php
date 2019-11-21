@@ -1,6 +1,6 @@
 <?php 
 require_once ("BD.php");
-class Compra
+class Pedido
 {
     private $conexao;
 
@@ -9,15 +9,14 @@ class Compra
     }    
     
     function cadastrar() {
+
     	$data = date("Y-m-d H:i:s");
     	$this->conexao->query("start transaction");
-    	$insere = $this->conexao->query("insert into compra (idCliente, dataCompra) 
-    		values ({$_SESSION['id']},'$data')");
+    	$insere = $this->conexao->query("insert into compra (idCompra, idCliente, dataPedido) values ({$_SESSION['id']},{$_SESSION['id']},'$data')");
     	if($insere){
     		$this->conexao->query("set @numCompra = last_insert_id()");
-    		foreach ($_SESSION['carrinho'] as $idEvento => $item){
-                $insereItem = $this->conexao->query("insert into itemCompra (numComra, idEvento, quantidade, valorCompra)
-                     values (@numPedido, $idProduto, {$item['quantidade']}, {$item['valorFinal']})");
+    		foreach ($_SESSION['carrinho'] as $idProduto => $item){
+    			$insereItem = $this->conexao->query("insert into itemCompra (numCompra, idEvento, quantidade) values (@numPedido, $idProduto, {$item['quantidade']})");
     			if(!$insereItem)
     				break;
     		}
