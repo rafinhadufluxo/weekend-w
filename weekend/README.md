@@ -10,10 +10,9 @@ Sistema de venda de ingressos (FESTA)
 - **[Rafa Arruda](https://github.com/mazarafa)** - *Criadora do repositório e desenvolvedora do sistema*.
 
 
-## Orientadoras  ##
-- [Dra Raquel Pegoraro](https://github.com/raquelpegoraro) - *Professora*
+## Orientadora  ##
 - [Dra Andressa Sebben](https://github.com/asebben) - *Professora*
-- [Dr Denio Duarte](https://github.com/duartedenio) - *Professor*
+
 
 
 ## Descrição do Projeto Weekend ##
