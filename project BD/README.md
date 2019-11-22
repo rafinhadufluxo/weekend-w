@@ -1,9 +1,10 @@
 ﻿# weekend-w
 
 
-*Descrição*
+## Orientador  ##
 
-................
+- [Dr Denio Duarte](https://github.com/duartedenio) - *Professor*
+
 
 # Modelo Conceitual
 
