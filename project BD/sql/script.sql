@@ -1,13 +1,12 @@
--- --------------------------------------------------------
 --
 -- Estrutura da tabela `Fabricante`
 --
+DROP TABLE IF EXISTS `fabricante`;
 CREATE TABLE `fabricante` (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,  
   nome VARCHAR(50) NOT NULL   
 );
 
--- --------------------------------------------------------
 --
 -- Estrutura da tabela `eventos`
 --
@@ -27,7 +26,6 @@ CREATE TABLE IF NOT EXISTS `evento` (
   FOREIGN KEY (idFabricante) REFERENCES fabricante(id) 
 );
 
--- --------------------------------------------------------
 --
 -- Estrutura da tabela `cliente`
 --
@@ -42,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `cliente` (
   PRIMARY KEY (`idCliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
------------------------------------------------------------
+
 --
 -- Estrutura da tabela `compra`
 CREATE TABLE `compra` (
@@ -61,7 +59,7 @@ CREATE TABLE `itemCompra` (
   FOREIGN KEY (idEvento) REFERENCES evento(id)
 );
 
--------------------------------------------------------------
+
 --
 -- Estrutura da tabela `ingressos`
 --
@@ -77,8 +75,6 @@ CREATE TABLE IF NOT EXISTS `ingressos` (
     FOREIGN KEY (idEvento) REFERENCES evento(id)
 );
 
------------------------------------------------------------------------------------------------------------------------------------------
---
 -- INSERT das tabelas ou melhor dizendo, adicionando valores pro BD
 
 INSERT INTO cliente (idCliente, nome, email, login, senha) VALUES ('11','Rafa Arruda', 'rafa@gmail.com', 'rafa', md5("12345")),
@@ -86,21 +82,18 @@ INSERT INTO cliente (idCliente, nome, email, login, senha) VALUES ('11','Rafa Ar
                                                         ('13','Mateus Koppe', 'matkoppe@gmail.com', 'koppe', md5("11223"));
 
 
-------------------------------------------------------------------------------------------------------------------------------------------
-INSERT INTO ingressos(idIgressos,qtd,idCliente,idEvento,dataPedido) VALUES()
 
 
-
-------------------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO fabricante (nome, id) VALUES ('Spotify',1), 
                                          ('Brazilian',2), 
                                          ('Trap', 3), 
                                          ('KondZilla', 4);
-------------------------------------------------------------------------------------------------------------------------------------------
+
 INSERT INTO evento (id,nome, idFabricante, imagem, LocalEvento,dataEvento, descricao, qtde, valor) VALUES (8,'Calourada CC', 1, 'aa.png','UFFS','2019-12-12','Computer error em CC',  60, 10),
                                                                                 (6,'Open Bar', NULL, 'bb.png', 'UFSC','2019-12-25','Prepare o copo', 70, 30),
                                                                                 (2,'Rafis Chuchu', 2, 'she.jpg','Av. Vitoria','2020-02-25', 'Deu a louca na rave', 100, 5),
                                                                                 (4,'False Alfter', 3, NULL,'Voz clube','2020-01-15', 'teste',  25, 25);
                                                                                
 
+INSERT INTO ingressos(idIngresso,qtd,idCliente,idEvento,dataPedido) VALUES(1,2,11,8,'2019-12-03');
 
