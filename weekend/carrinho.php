@@ -19,7 +19,7 @@ session_start();
 						<th>Produto</th>
 						<th>Valor unitário</th>
 						<th>Quantidade</th>
-						<th>Total Produto</th>
+						<th>Total</th>
 						<th>Excluir</th>
 					</tr>
 					<?php
@@ -40,7 +40,7 @@ session_start();
 					<tr class="linhaFinal">
 						<td colspan="3">Total do pedido:</td>
 						<td class="celulaValor">R$ <span id="totalPedido"></span></td>
-						<td></td>
+						<td id="res"></td>
 					</tr>
 				
 				</table>
@@ -60,4 +60,17 @@ session_start();
 	</div>
 	<!-- fim area central -->
 	<script src="js/carrinho.js"></script>
+	<script>
+	<?php
+		$a = 0;
+		foreach($_SESSION['carrinho'] as $id => $item){
+			$a += $item['valorFinal'] * $item['quantidade'];
+		}
+	?>
+	const a = <?= $a;?>
+
+	// console.log(a)
+	// document.getElementById("");
+	document.getElementById('totalPedido').innerHTML = a;
+	</script>
 	<?php include "includes/rodape.php"; ?>	
