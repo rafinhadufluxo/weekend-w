@@ -4,7 +4,7 @@
     color: #ccc;
     justify-content: center;
     align-content: center;
-    background-image: url('../Img/vintage/banner_vintage3.jpeg');
+    background-image: url('../Img/vintage/banner_vintage2.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,4 +16,18 @@
 
 .first-container3 .insideFirstContainer3>.image-logo {
     margin-top: 5rem;
+}
+
+
+/* parte de contato, está sendo feita aquiii */
+
+.cetralizandoBO {
+    text-align: center
+}
+
+.vintage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
