@@ -3,6 +3,8 @@ include "classes/Cliente.php";
 $client = new Cliente();
 $dados = $client->autenticar($_POST['usuario']);
 
+
+
 if(empty($dados)){ // usuario nao existe
 	header("Location: login.php?erro=1");
 }

@@ -8,9 +8,10 @@ class Cliente
     }    
     
     function autenticar($usuario) {
-        $sql = "SELECT * FROM cliente WHERE login = '$usuario' or email = '$usuario'";
-        $result = $this->conexao->query($sql);
-        return $result;
+        $sql = "SELECT * FROM `cliente` WHERE login = '$usuario' or email = '$usuario'";
+        $stmt = $this->conexao->query($sql);
+        return $stmt;
     }
 }
 ?>
+

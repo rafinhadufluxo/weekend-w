@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/loga.css">
+    
 
     <title>Weekend Warriors</title>
 </head>

@@ -1,4 +1,7 @@
 <?php include "includes/cabecaSimples.php"; ?>
+<?php
+session_start();
+?>
 <section>
 	<div class="container">
 

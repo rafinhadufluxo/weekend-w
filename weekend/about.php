@@ -96,7 +96,7 @@
                         
 
                     </form>
-                </main>]
+                </main>
                 
 
             </div>
