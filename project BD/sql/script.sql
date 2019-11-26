@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `cliente` (
   `login` VARCHAR(50) NOT NULL,
   `senha` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`idCliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+);
 
 
 --
@@ -84,10 +84,11 @@ INSERT INTO cliente (idCliente, nome, email, login, senha) VALUES ('11','Rafa Ar
 
 
 
-INSERT INTO fabricante (nome, id) VALUES ('Spotify',1), 
-                                         ('Brazilian',2), 
-                                         ('Trap', 3), 
-                                         ('KondZilla', 4);
+INSERT INTO `fabricante`(`id`, `nome`) VALUES (101,'Spotify'), 
+                                         (102,'Brazilian'), 
+                                         (103,'Trap'), 
+                                         (104,'KondZilla');
+
 
 INSERT INTO evento (id,nome, idFabricante, imagem, LocalEvento,dataEvento, descricao, qtde, valor) VALUES (8,'Calourada CC', 1, 'aa.png','UFFS','2019-12-12','Computer error em CC',  60, 10),
                                                                                 (6,'Open Bar', NULL, 'bb.png', 'UFSC','2019-12-25','Prepare o copo', 70, 30),
@@ -97,3 +98,6 @@ INSERT INTO evento (id,nome, idFabricante, imagem, LocalEvento,dataEvento, descr
 
 INSERT INTO ingressos(idIngresso,qtd,idCliente,idEvento,dataPedido) VALUES(1,2,11,8,'2019-12-03');
 
+INSERT INTO `compra`(`idCompra`, `idCliente`, `dataCompra`) VALUES (01,11,'2019-12-03');
+
+INSERT INTO `itemCompra`(`numCompra`, `idEvento`, `quantidade`) VALUES (0001,8,2);

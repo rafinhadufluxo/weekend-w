@@ -1,7 +1,6 @@
 # weekend-w
 
 
-
 Sistema de venda de ingressos (FESTA)
 
 
@@ -10,9 +9,10 @@ Sistema de venda de ingressos (FESTA)
 - **[Rafa Arruda](https://github.com/mazarafa)** - *Criadora do repositório e desenvolvedora do sistema*.
 
 
-## Orientadora  ##
+## Orientadoras  ##
+- [Dra Raquel Pegoraro](https://github.com/raquelpegoraro) - *Professora*
 - [Dra Andressa Sebben](https://github.com/asebben) - *Professora*
-
+- [Dr Denio Duarte](https://github.com/duartedenio) - *Professor*
 
 
 ## Descrição do Projeto Weekend ##

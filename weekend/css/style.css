@@ -26,13 +26,25 @@ a {
     /* todos os links sem sublinhado */
 }
 
-.teste {
-    /* sobre termo de privacidade */
-    text-align: justify;
-    color: black;
+
+/*aqui esta centralizando as compras que está no carrinho   */
+
+
+/* esse mesmo codigo centralizandoCarrinho, foi reutilizando na parte de Inserir novo evento*/
+
+.centralizandoCompra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
 }
 
-
+.alok {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
 
 
 /************************************************************************************ busca */
@@ -357,7 +369,7 @@ div.produto:hover {
 }
 
 footer {
-    padding: 25px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     background: black;
