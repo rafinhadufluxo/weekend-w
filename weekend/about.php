@@ -84,7 +84,8 @@
                         </div>
                         <br>
                         <br>
-
+                        <br>
+                        <br>
                         <!-- colocando localizando aonde voce está-->
                         <h2>Nossa localização</h2>
                         <details>

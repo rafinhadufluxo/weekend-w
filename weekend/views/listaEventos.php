@@ -1,7 +1,7 @@
 <h2><?=$titulo?></h2>
-<br>
-<br>
-<br>
+<br><br><br>
+
+
 <!-- container de produtos -->
 <div class="lista-produtos">
 

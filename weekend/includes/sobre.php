@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
-    <title>Weekend Warriors</title>
+    <title>ABOUT</title>
 </head>
 
 <body>
@@ -24,17 +24,10 @@
                 </div>
                 <div class="left-element">
                     <div class="left-element">
-                        <?php
-                        if (isset($_SESSION['nome'])) { ?><li>
-                            <span id="login">Olá, <?= $_SESSION['nome']; ?>
-                                (<a href="sair.php">sair</a>)</span></li>
-                        <?php
-                        } else { ?>
-                            <li><span id="login">Olá, visitante! (<a href="login.php">login</a>)</span></li>
-                        <?php
-                        }
-                        ?><br>
+                   
+                        <li><span id="login"><a href="login.php">login <img src="Img/entrar.png" width="32" alt="login"></a></span></a></span>
                         <li><span id="carrinho"><a href="carrinho.php">carrinho <span id="numItensCarrinho">(<?= isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : "0"; ?>)</span><img src="Img/cart.png" width="32" alt="carrinho de compras"></a></span></li>
+                    </div>
                     </div>
                 </div>
             </ul>

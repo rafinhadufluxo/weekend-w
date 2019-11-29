@@ -19,6 +19,7 @@ h3 {
     font-weight: lighter;
     letter-spacing: 6px;
     color: black;
+    margin-top: -40px;
 }
 
 a {
@@ -27,19 +28,19 @@ a {
 }
 
 
-/*aqui esta centralizando as compras que está no carrinho   */
-
+/*[ops] aqui esta centralizando as compras que está no carrinho   */
+/*[ops]-> tag de centralizando*/
 
 /* esse mesmo codigo centralizandoCarrinho, foi reutilizando na parte de Inserir novo evento*/
 
-.centralizandoCompra {
+.centralizandoCompra {/*[ops]*/
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: auto;
 }
 
-.alok {
+.alok {/*[ops]*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -98,7 +99,7 @@ nav ul.nav-ul {
 .nav-ul li {
     list-style: none;
     padding: 10px 1.8rem;
-    padding-top: ;
+    padding-top: 20px;
     border-right: 1px solid;
     border-color: black;
     text-align: center;
@@ -131,7 +132,7 @@ nav ul.nav-ul {
     align-content: flex-end;
     margin-left: 200px;
     color: black;
-    padding: 4px;
+    
 }
 
 
@@ -188,34 +189,7 @@ nav ul.nav-ul {
     align-items: center;
 }
 
-.content1 a.tomorrowland-alfter {
-    padding: 1.4rem 8.3rem;
-    box-shadow: var(--creating-shadow);
-    margin-right: 1.6rem;
-    background-color: #fff;
-    position: relative;
-    bottom: 20px;
-    border-top: 3px solid red;
-}
 
-.content1 a.tomorrowland-alfter2 {
-    padding: 1.4rem 8.3rem;
-    background-color: #fff;
-    box-shadow: var(--creating-shadow);
-    position: relative;
-    bottom: 20px;
-    border-top: 3px solid skyblue;
-}
-
-.content1 a.tomorrowland-alfter p {
-    padding-top: 4px;
-    font-size: 14px;
-}
-
-.content1 a.tomorrowland-alfter2 p {
-    padding-top: 4px;
-    font-size: 14px;
-}
 
 #heading-belgium {
     color: linear-gradient(90deg, rgba(201, 68, 68, 1) 57%, rgba(168, 179, 181, 1) 100%);
@@ -223,13 +197,7 @@ nav ul.nav-ul {
 }
 
 
-/* hover on content1 */
 
-a.tomorrowland-alfter2:hover,
-a.tomorrowland-alfter:hover {
-    box-shadow: 10px 12px 50px -9px rgba(0, 0, 0, 0.50);
-    bottom: 22px;
-}
 
 .content2 {
     display: flex;
@@ -373,6 +341,7 @@ footer {
     display: flex;
     flex-direction: column;
     background: black;
+    margin-top: 20px;
 }
 
 footer p {

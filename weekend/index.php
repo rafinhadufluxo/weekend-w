@@ -12,8 +12,11 @@
         </section>
         
         <div class="content2">
-            <section class="col-2">
+           
+            <section class="col-2"> 
+
                 <?php
+                
                     require_once "classes/Evento.php";
                     require_once "includes/functions.php";
 
@@ -31,13 +34,15 @@
                     // var_dump($lista);
 
 
-                    // echo "<pre>";
+                   
                     //print_r($lista);
-                    //echo "</pre>";
+                    
                     require_once "views/listaEventos.php";
 
                 ?>
+                 
             </section>
+           
 
 
         </div>
