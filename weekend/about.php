@@ -54,7 +54,7 @@
                     <form>
                         <div>
                             <label for="nome"> Nome Completo: </label>
-                            <input type="text" name="nome" id="nome" size="50" maxlength="50" required autocomplete="off" autofocus>
+                            <input type="text" name="nome" id="nome" size="50" maxlength="50" >
                         </div>
                         <br>
                         <div>

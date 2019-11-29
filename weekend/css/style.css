@@ -51,7 +51,6 @@ a {
 
 section.busca {
     border-radius: 20px;
-    background-color: #1A1919;
     padding: 4px;
     text-align: center;
 }
@@ -60,6 +59,7 @@ section.busca {
     width: 70%;
     padding: 10px;
     border-radius: 15px;
+    margin-top: -15px;
 }
 
 
@@ -382,6 +382,8 @@ footer p {
 
 .social {
     padding: 0;
+    text-align: end;
+    margin-top: -50px;
 }
 
 .social li {

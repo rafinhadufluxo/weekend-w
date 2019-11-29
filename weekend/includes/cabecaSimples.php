@@ -20,15 +20,19 @@
                 <div class="right-element">
 
                     <li><a href="index.php">Home</a></li>
+                    
                     <li><a href="about.php">About</a></li>
 
                 </div>
                 <div class="left-element">
                     <div class="left-element">
                         <?php
-                        if (isset($_SESSION['nome'])) { ?><li>
-                            <span id="login">Olá, <?= $_SESSION['nome']; ?>
+                        if (isset($_SESSION['login'])) { ?><li>
+                            <span id="login">Olá, <?= $_SESSION['login']; ?>
                                 (<a href="sair.php">sair</a>)</span></li>
+
+                                <?php echo '$_'
+                                ?>
                         <?php
                         } else { ?>
                             <li><span id="login">Olá, visitante! (<a href="login.php">login</a>)</span></li>

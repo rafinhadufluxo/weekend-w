@@ -10,7 +10,7 @@
                 <button>OK</button>
             </form>
         </section>
-        <br> <br>
+        
         <div class="content2">
             <section class="col-2">
                 <?php

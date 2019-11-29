@@ -1,4 +1,5 @@
     <footer>
+            <br><br>
             <p>Weekend Warriors- Nova Mutum/MT<br> localizacao: Central Park<br> telefone: 1234-56789</p>
             <ul class="social">
                 <a href="http://instagram.com/mazarafa7" target="_blank" rel="noreferrer"><img src="Img/twitter.png" title="Twitter"></a>
