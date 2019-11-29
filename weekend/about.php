@@ -7,6 +7,8 @@
 
                 <div class="text2020">
                     <br>
+                    <br>
+                    <br>
                     <h1 class="t-heading">Como foi fundada a Weekend Warriors ...</h1>
                     <br>
                     <p> Weekend Warriors é um festival de música realizado anualmente. Sua edição principal é realizada em Boom na Cuiabá, cidade com menos de 20 mil habitantes, no distrito de Mato Grosso. A primeira edição foi anunciada em 20 de julho de
