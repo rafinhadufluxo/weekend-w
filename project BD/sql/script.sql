@@ -90,14 +90,12 @@ INSERT INTO `fabricante`(`id`, `nome`) VALUES (101,'Spotify'),
                                          (104,'KondZilla');
 
 
-INSERT INTO evento (id,nome, idFabricante, imagem, LocalEvento,dataEvento, descricao, qtde, valor) VALUES (8,'Calourada CC', 1, 'aa.png','UFFS','2019-12-12','Computer error em CC',  60, 10),
+INSERT INTO evento (id,nome, idFabricante, imagem, LocalEvento,dataEvento, descricao, qtde, valor) VALUES (8,'Calourada CC', 101, 'aa.png','UFFS','2019-12-12','Computer error em CC',  60, 10),
                                                                                 (6,'Open Bar', NULL, 'bb.png', 'UFSC','2019-12-25','Prepare o copo', 70, 30),
-                                                                                (2,'Rafis Chuchu', 2, 'she.jpg','Av. Vitoria','2020-02-25', 'Deu a louca na rave', 100, 5),
-                                                                                (4,'False Alfter', 3, NULL,'Voz clube','2020-01-15', 'teste',  25, 25);
+                                                                                (2,'Rafis Chuchu', 102, 'she.jpg','Av. Vitoria','2020-02-25', 'Deu a louca na rave', 100, 5),
+                                                                                (4,'False Alfter', 103, NULL,'Voz clube','2020-01-15', 'teste',  25, 25);
                                                                                
 
 INSERT INTO ingressos(idIngresso,qtd,idCliente,idEvento,dataPedido) VALUES(1,2,11,8,'2019-12-03');
 
-INSERT INTO `compra`(`idCompra`, `idCliente`, `dataCompra`) VALUES (01,11,'2019-12-03');
 
-INSERT INTO `itemCompra`(`numCompra`, `idEvento`, `quantidade`) VALUES (0001,8,2);
