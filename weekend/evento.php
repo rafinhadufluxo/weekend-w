@@ -10,8 +10,8 @@
             if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
                 echo "<h2>Identificador de evento inválido</h2>";
             } else {
-                $obj = new Evento();
-                $evento = $obj->consultaEvento($_GET['id']);
+                $pop = new Evento();
+                $evento = $pop->consultaEvento($_GET['id']);
                 if (empty($evento)) {
                     echo "<h2>Evento não encontrado</h2>";
                 } else {

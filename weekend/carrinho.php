@@ -14,7 +14,7 @@ session_start();
 			?>
 
 			<div class="centralizandoCompra">
-				<form action="fecharCompra.php" method="post">
+				<form action="#" method="post">
 					<table id="carrinho">
 						<tr>
 							<th>Produto</th>
