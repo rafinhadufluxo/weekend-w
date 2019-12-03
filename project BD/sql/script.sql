@@ -41,23 +41,6 @@ CREATE TABLE IF NOT EXISTS `cliente` (
 );
 
 
---
--- Estrutura da tabela `compra`
-CREATE TABLE `compra` (
-  `idCompra` INTEGER AUTO_INCREMENT PRIMARY KEY,  
-  `idCliente` INTEGER,
-  `dataCompra` DATE,
-  FOREIGN KEY (idCliente) REFERENCES cliente(idCliente)
-);
-
-CREATE TABLE `itemCompra` (
-  numCompra INTEGER,
-  idEvento INTEGER,
-  quantidade INTEGER,
-  PRIMARY KEY(numCompra, idEvento),
-  FOREIGN KEY (numCompra) REFERENCES compra(idCompra),
-  FOREIGN KEY (idEvento) REFERENCES evento(id)
-);
 
 
 --

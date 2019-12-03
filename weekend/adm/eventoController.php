@@ -1,7 +1,5 @@
 <?php include "cabecalhoAdm.php"; ?>
 
-
-
 <div class="conteiner">
     <main>
         <?php

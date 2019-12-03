@@ -1,11 +1,12 @@
 <div class="alok">    
     <h2><?$titulo;?></h2>
+    <!-- Neste campo, pode adicionar mais eventos. Informando qtde e entre outros requisitos -->
     <p>|  <a href="eventoController.php?acao=cadastro">Inserir novo</a> | </p>
 </div>
 <br>
 <div class="centralizandoCompra">
     
-
+    <!-- MENU PRINCIPAL DO ADM  -->
     <table border = "1" style="tr > td { padding:30px }">
 
         <tr>

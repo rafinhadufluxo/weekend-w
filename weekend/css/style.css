@@ -29,18 +29,23 @@ a {
 
 
 /*[ops] aqui esta centralizando as compras que está no carrinho   */
+
+
 /*[ops]-> tag de centralizando*/
+
 
 /* esse mesmo codigo centralizandoCarrinho, foi reutilizando na parte de Inserir novo evento*/
 
-.centralizandoCompra {/*[ops]*/
+.centralizandoCompra {
+    /*[ops]*/
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: auto;
 }
 
-.alok {/*[ops]*/
+.alok {
+    /*[ops]*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -132,7 +137,6 @@ nav ul.nav-ul {
     align-content: flex-end;
     margin-left: 200px;
     color: black;
-    
 }
 
 
@@ -189,15 +193,10 @@ nav ul.nav-ul {
     align-items: center;
 }
 
-
-
 #heading-belgium {
     color: linear-gradient(90deg, rgba(201, 68, 68, 1) 57%, rgba(168, 179, 181, 1) 100%);
     ;
 }
-
-
-
 
 .content2 {
     display: flex;
@@ -337,7 +336,7 @@ div.produto:hover {
 }
 
 footer {
-    padding: 10px;
+    padding: 0px 25px 0px 36px;
     display: flex;
     flex-direction: column;
     background: black;

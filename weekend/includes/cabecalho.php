@@ -21,11 +21,11 @@
 
                 </div>
                 <div class="left-element">
-                    <div class="left-element">
-                    
-                        <li><span id="login"><a href="login.php">login <img src="Img/entrar.png" width="32" alt="login"></a></span></a></span>
-                        <li><span id="carrinho"><a href="carrinho.php">carrinho <span id="numItensCarrinho">(<?= isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : "0"; ?>)</span><img src="Img/cart.png" width="32" alt="carrinho de compras"></a></span></li>
-                    </div>
+
+
+                    <li><span id="login"><a href="login.php">login <img src="Img/entrar.png" width="32" alt="login"></a></span></a></span>
+                    <li><span id="carrinho"><a href="carrinho.php">carrinho <span id="numItensCarrinho">(<?= isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : "0"; ?>)</span><img src="Img/cart.png" width="32" alt="carrinho de compras"></a></span></li>
+
                 </div>
             </ul>
         </nav>

@@ -1,3 +1,6 @@
+<!-- OBSERVACAO  -->
+<!-- cabecalho do login, tive que refazer tudo dnv hehe -->
+<!-- para tirar a imagem do fundo que tem no HOME E NO ABOUT    -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.css">   
     <link rel="stylesheet" href="css/loga.css">
     
 
