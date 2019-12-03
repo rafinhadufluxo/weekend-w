@@ -32,10 +32,10 @@ class Evento{
     }
 
 	function cadastrar ($dados){
-		$sql= "INSERT INTO evento(nome,idFabricante,imagem,LocalEvento,dataEvento,descricao,qtde, valor) 
+		$sql= "INSERT INTO evento(nome,idFabricante,LocalEvento,dataEvento,descricao,qtde, valor) 
 		VALUES('{$dados['nome']}',
 			{$dados['idFabricante']},
-			'{$dados['imagem']}',
+			
 			'{$dados['LocalEvento']}',
 			'{$dados['dataEvento']}',
 			'{$dados['descricao']}',
@@ -54,7 +54,7 @@ class Evento{
 	function alterar($dados){
 		
 		$sql= "UPDATE evento SET  nome = '{$dados['nome']}', idFabricante = {$dados['idFabricante']},
-		    imagem = '{$dados['imagem']}', LocalEvento = '{$dados['LocalEvento']}', dataEvento = '{$dados['dataEvento']}', descricao = '{$dados['descricao']}', qtde =  {$dados['qtde']},
+		     LocalEvento = '{$dados['LocalEvento']}', dataEvento = '{$dados['dataEvento']}', descricao = '{$dados['descricao']}', qtde =  {$dados['qtde']},
 			valor = {$dados['valor']} WHERE id = {$dados ['id']}";	
 		return $this->conexao->query($sql);
 

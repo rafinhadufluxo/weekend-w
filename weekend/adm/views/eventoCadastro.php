@@ -10,7 +10,7 @@
 			</div>
 
 			<div class="form-item">
-				<label for="fabricante" class="rotulo">Fabricante:</label>
+				<label for="fabricante" class="rotulo">Fornecedor:</label>
 				<select name="idFabricante" id="fabricante">
 					<option value="0">Não informado</option>
 					<?php
@@ -21,10 +21,7 @@
 					?>						
 				</select>
 			</div>
-			<div class="form-item">
-				<label for="arquivo" class="rotulo">Selecione uma imagem:</label>
-				<input type="file" name="arquivo" id="arquivo">
-			</div>
+			
 			<div class="form-item">
 				<label for="desc" class="rotulo">Local:</label>
 				<textarea name="LocalEvento" rows="5" cols="30" id="LocalEvento"></textarea>

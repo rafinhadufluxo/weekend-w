@@ -3,7 +3,7 @@ function mostraImagem($nomeArquivo){
 	if($nomeArquivo =='')
 		return "default.jpg";
 	else
-		return $nomeArquivo;
+		return "default.jpg";
 }
 
 function formataPreco($valor){

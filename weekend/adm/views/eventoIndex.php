@@ -12,7 +12,7 @@
         <tr>
             <th>Nome</th>
             <th>Quantidade</th>
-            <th>Fabricante</th>
+            
             <th>Data</th>
             <th>Valor</th>
             <th>Ação</th>
@@ -27,7 +27,7 @@
                 <tr>
                     <td> <?= $evento['nomeEvento'];?> </td>
                     <td> <?= $evento['qtde'];?> </td>
-                    <td> <?= $evento['nomeFabricante'];?> </td>
+                   
                     <td> <?= $evento['dataEvento'];?> </td>
                     <td> <?= $evento['valorFinal'];?> </td>
                     <td> 

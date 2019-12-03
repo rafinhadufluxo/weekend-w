@@ -33,7 +33,9 @@
                                
                             </p>
                             <br><br>
+                            
                             <form action="adiciona.php" method="post" id="add-carrinho">
+                                
                                 <label for="quantidade">Quantidade:</label>
                                 <input type="number" name="quantidade" value="1" min="1">
                                 <input type="hidden" name="id" value="<?= $evento[0]['idEvento'] ?>">
@@ -46,7 +48,7 @@
                         </div>
                         <div class="detalhes">
                             <h4>Detalhes do Evento</h4>
-                            <p class="fab">Fabricante: <?= ($evento[0]['nomeFabricante'] == NULL) ? "Não informado" : $evento[0]['nomeFabricante']; ?></p>
+                            <p class="fab">Fornecedor: <?= ($evento[0]['nomeFabricante'] == NULL) ? "Não informado" : $evento[0]['nomeFabricante']; ?></p>
 
                             <p class="dataEvento">Data: <?= nl2br($evento[0]['dataEvento']) ?></p>
                             <p class="LocalEvento">Local: <?= nl2br($evento[0]['LocalEvento']) ?></p>
